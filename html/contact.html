@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klaasus Antique - Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Background */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #001d26, #003543, #004d5a);
+            font-family: 'Times New Roman', serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Nav */
+        .nav-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .glass-nav {
+            width: 85%;
+            padding: 1.5rem 3rem;
+            background: rgba(255,255,255,0.12);
+            border-radius: 2.5rem;
+            border: 1px solid rgba(255,255,255,0.25);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+        }
+
+        .nav-section {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .glass-btn {
+            text-decoration: none;
+            padding: 0.6rem 1.5rem;
+            background: rgba(255,255,255,0.18);
+            border-radius: 1rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            backdrop-filter: blur(6px);
+            transition: 0.25s;
+        }
+
+        .glass-btn:hover {
+            background: rgba(255,255,255,0.35);
+            transform: translateY(-2px);
+        }
+
+        .glass-pill {
+            padding: 1rem 3rem;
+            font-family: "Caveat", cursive;
+            font-size: 5rem;
+            color: white;
+            background: rgba(255,255,255,0.18);
+            border-radius: 2rem;
+            border: 1px solid rgba(255,255,255,0.35);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .contact-box {
+            width: 80%;
+            max-width: 700px;
+            background: rgba(255,255,255,0.18);
+            border-radius: 2rem;
+            border: 1px solid rgba(255,255,255,0.35);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+            color: white;
+        }
+
+        .contact-box h1 {
+            font-family: "Caveat", cursive;
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        label {
+            font-size: 1.5rem;
+            display: block;
+            margin-top: 1rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-top: 0.5rem;
+            border-radius: 1rem;
+            border: 1px solid rgba(255,255,255,0.4);
+            background: rgba(255,255,255,0.2);
+            color: white;
+            font-size: 1.2rem;
+            backdrop-filter: blur(4px);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            margin-top: 2rem;
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255,255,255,0.25);
+            border-radius: 1rem;
+            border: 1px solid rgba(255,255,255,0.45);
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+            transition: 0.25s;
+        }
+
+        .submit-btn:hover {
+            background: rgba(255,255,255,0.4);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+<header class="nav-wrapper">
+    <nav class="glass-nav">
+        <div class="nav-section left">
+            <a href="#" class="glass-btn">Home</a>
+            <a href="#" class="glass-btn">Over Ons</a>
+        </div>
+
+        <div class="nav-title glass-pill">klaasus antique</div>
+
+        <div class="nav-section right">
+            <a href="#" class="glass-btn">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section class="contact-section">
+    <div class="contact-box">
+        <h1>Contact Ons</h1>
+        <form>
+            <label>Naam:</label>
+            <input type="text" placeholder="Uw naam...">
+
+            <label>Email:</label>
+            <input type="email" placeholder="Uw email...">
+
+            <label>Bericht:</label>
+            <textarea placeholder="Uw bericht..."></textarea>
+
+            <button type="submit" class="submit-btn">Verzenden</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
